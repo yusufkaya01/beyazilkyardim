@@ -1,2 +1,0 @@
-# beyazilkyardim
-beyazilkyardim-web-page
