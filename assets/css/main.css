@@ -1,0 +1,3491 @@
+body {
+    margin-top: 60px; /* Adjust this based on your menu height */
+    margin-left: 8%;
+    margin-right: 5%;
+    font-family: "Libre Baskerville", serif;
+    padding: 0;
+    z-index: 1;
+}
+
+body::before {
+    content: ""; /* Required to display the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/body-background.png'); /* Replace with your image path */
+    background-size: 36%; /* Make the image cover the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the background static */
+    background-position: center; /* Center the image */
+    opacity: 0.04; /* Adjust transparency (0 is fully transparent, 1 is fully opaque) */
+    z-index: -1; /* Set a lower z-index to ensure it's behind the content */
+}
+
+a {
+    position: relative;
+    z-index: 1; /* Ensure links stay above the background image */
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    body {
+        margin-top: 50px; /* Adjust this based on your menu height */
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 14px;
+    }
+    body::before {
+        background-size: 50%; /* Adjust background size for smaller screens */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        margin-top: 55px; /* Adjust this based on your menu height */
+        margin-left: 6%;
+        margin-right: 5%;
+        font-size: 16px;
+    }
+    body::before {
+        background-size: 40%; /* Adjust background size for tablets */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin-top: 60px; /* Adjust this based on your menu height */
+        margin-left: 7%;
+        margin-right: 5%;
+        font-size: 18px;
+    }
+    body::before {
+        background-size: 36%; /* Adjust background size for small laptops */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        margin-top: 60px; /* Adjust this based on your menu height */
+        margin-left: 8%;
+        margin-right: 5%;
+        font-size: 20px;
+    }
+    body::before {
+        background-size: 36%; /* Adjust background size for desktops */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) and (max-width: 1900px) {
+    body {
+        margin-top: 60px; /* Adjust this based on your menu height */
+        margin-left: 8%;
+        margin-right: 5%;
+        font-size: 22px;
+    }
+    body::before {
+        background-size: 36%; /* Adjust background size for large desktops */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1900px) */
+@media (min-width: 1901px) {
+    body {
+        margin-top: 60px; /* Adjust this based on your menu height */
+        margin-left: 8%;
+        margin-right: 5%;
+        font-size: 24px;
+    }
+    body::before {
+        background-size: 36%; /* Adjust background size for ultra large screens */
+    }
+}
+
+
+
+/* Decors Start*/
+
+.left-image-decor {
+    background-image: url(../images/left-bg-decor.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    height: 110%;
+    margin-top: -200px;
+    left: -8%;
+  }
+
+  .right-image-decor {
+    background-image: url(../images/right-bg-decor.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    height: 110%;
+    margin-top: -200px;
+    right: -5%;
+  }
+
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    .left-image-decor {
+        background-size: 50%;
+        height: 100%;
+        margin-top: -100px;
+        left: -10%;
+    }
+    .right-image-decor {
+        background-size: 50%;
+        height: 100%;
+        margin-top: -100px;
+        right: -10%;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .left-image-decor {
+        background-size: 60%;
+        height: 105%;
+        margin-top: -150px;
+        left: -9%;
+    }
+    .right-image-decor {
+        background-size: 60%;
+        height: 105%;
+        margin-top: -150px;
+        right: -9%;
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .left-image-decor {
+        background-size: 70%;
+        height: 110%;
+        margin-top: -180px;
+        left: -8%;
+    }
+    .right-image-decor {
+        background-size: 70%;
+        height: 110%;
+        margin-top: -180px;
+        right: -8%;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .left-image-decor {
+        background-size: 80%;
+        height: 110%;
+        margin-top: -200px;
+        left: -8%;
+    }
+    .right-image-decor {
+        background-size: 80%;
+        height: 110%;
+        margin-top: -200px;
+        right: -8%;
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) and (max-width: 1900px) {
+    .left-image-decor {
+        height: 110%;
+        margin-top: -200px;
+        left: -8%;
+    }
+    .right-image-decor {
+        height: 110%;
+        margin-top: -200px;
+        right: -8%;
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1900px) */
+@media (min-width: 1901px) {
+    .left-image-decor {
+        height: 110%;
+        margin-top: -200px;
+        left: -8%;
+    }
+    .right-image-decor {
+        height: 110%;
+        margin-top: -200px;
+        right: -8%;
+    }
+}
+
+/* Decors End*/
+
+/* Fonts Start*/
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  .libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .libre-baskerville-regular-italic {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 14px; /* Adjust as needed */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 16px; /* Adjust as needed */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 18px; /* Adjust as needed */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 20px; /* Adjust as needed */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 22px; /* Adjust as needed */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1900px) */
+@media (min-width: 1901px) {
+    .poppins-thin, .poppins-extralight, .poppins-light, .poppins-regular, .poppins-medium, .poppins-semibold, .poppins-bold, .poppins-extrabold, .poppins-black,
+    .poppins-thin-italic, .poppins-extralight-italic, .poppins-light-italic, .poppins-regular-italic, .poppins-medium-italic, .poppins-semibold-italic, .poppins-bold-italic, .poppins-extrabold-italic, .poppins-black-italic,
+    .libre-baskerville-regular, .libre-baskerville-bold, .libre-baskerville-regular-italic {
+        font-size: 24px; /* Adjust as needed */
+    }
+}
+
+/* Fonts End*/
+
+/* Static Logos Start*/
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 1000; /* Ensures it's above other content */
+    }
+  
+  .whatsapp-icon img {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+  }
+  
+
+  /* red logo */
+  .logo-icon { 
+    position: fixed;
+    bottom: 25px;
+    left: 20px;
+    z-index: 9990; /* Ensures it's above other content */
+    }
+  
+  .logo-icon img {
+    width: 80px; /* Adjust the size as needed */
+    height: auto;
+  }
+
+  /* white logo */
+  .logo-icon-top {
+    position: fixed;
+    top: 0px;
+    left: 170px;
+    z-index: 9990; /* Ensures it's above other content */
+    }
+  
+  .logo-icon-top img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+  }
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    .whatsapp-icon img {
+        width: 60px; /* Adjust the size as needed */
+    }
+    .logo-icon img {
+        width: 50px; /* Adjust the size as needed */
+    }
+    .logo-icon-top img {
+        width: 30px; /* Adjust the size as needed */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .whatsapp-icon img {
+        width: 70px; /* Adjust the size as needed */
+    }
+    .logo-icon img {
+        width: 60px; /* Adjust the size as needed */
+    }
+    .logo-icon-top img {
+        width: 40px; /* Adjust the size as needed */
+    }
+    .logo-icon-top {
+        left: 500px;
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .whatsapp-icon img {
+        width: 80px; /* Adjust the size as needed */
+    }
+    .logo-icon img {
+        width: 70px; /* Adjust the size as needed */
+    }
+    .logo-icon-top img {
+        width: 45px; /* Adjust the size as needed */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .whatsapp-icon img {
+        width: 90px; /* Adjust the size as needed */
+    }
+    .logo-icon img {
+        width: 75px; /* Adjust the size as needed */
+    }
+    .logo-icon-top img {
+        width: 50px; /* Adjust the size as needed */
+    }
+    .logo-icon-top {
+        left: 0px;
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .whatsapp-icon img {
+        width: 100px; /* Adjust the size as needed */
+    }
+    .logo-icon img {
+        width: 80px; /* Adjust the size as needed */
+    }
+    .logo-icon-top img {
+        width: 45px; /* Adjust the size as needed */
+    }
+
+    .logo-icon-top {
+        left: 0px;
+    }
+}
+
+  /* Static Logos End*/
+
+
+/****** Menu Start *********/
+.menu, .submenu {
+    list-style: none; /* Remove dots from menu and submenu items */
+}
+
+/* Navigation menu container */
+nav {
+    background-color: white; /* Set background color */
+    padding: 10px 0; /* Add padding for spacing */
+    position: fixed; /* Fix the menu to the top */
+    top: 0; /* Align at the top */
+    left: 0; /* Align to the left edge */
+    width: 100%; /* Make the menu full width */
+    z-index: 1000; /* Ensure the menu stays on top of other content */
+    height: 55px !important;
+}
+
+/* Parent menu */
+.menu {
+    display: flex; /* Align menu items in one line */
+    justify-content: center; /* Center align the menu */
+    gap: 20px; /* Add space between menu items */
+    font-family: "Poppins", serif;
+    align-items: center; /* Ensure perfect vertical alignment */
+}
+
+/* Menu items */
+.menu-item > a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+    padding: 10px 15px; /* Spacing for menu items */
+    display: block;
+    font-size: 1rem;
+    transition: color 0.3s; /* Smooth hover effect */
+    font-weight: 500;
+    font-style: normal;
+}
+
+.menu-item > a:hover {
+    color: #a53501; /* Change text color on hover */
+    font-weight: 500;
+}
+
+.menu-item-title {
+    text-decoration: none; /* Remove underline */
+    color: #d83200; /* Text color */
+    padding: 10px 15px; /* Spacing for menu items */
+    display: block;
+    font-size: 1.1rem;
+    transition: color 0.3s; /* Smooth hover effect */
+    font-weight: 700;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    margin-top: -25px;
+    line-height: 1; /* Ensure consistent height */
+}
+
+#menu-item-box {
+    border: #666;
+}
+
+/* Submenu styling */
+.submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    padding: 0px 0;
+    min-width: 200px; /* Set minimum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+    font-family: "Poppins", serif;
+    list-style: none;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    display: block;
+    transition: background-color 0.3s;
+    border: 2px solid white; /* Add border for submenu items */
+    border-radius: 8px; /* Add rounded corners */
+    background-color: whitesmoke; /* Keep the background consistent */
+    font-weight: 400;
+    font-family: "Poppins", serif;
+}
+
+/* kurumsal submenu etc*/
+.submenu li a:hover {
+    color: #a53501;
+    background-color: none; /* Keep background color unchanged */
+    font-weight: 420;
+}
+
+/* Show submenu on hover */
+.menu-item {
+    position: relative; /* Needed for submenu positioning */
+}
+
+/* Hide submenus for OSGB Hizmetleri, Eğitimlerimiz, Danışmanlık Hizmetleri */
+.menu-item:hover .submenu {
+    display: block; /* Show submenu when hovering over parent */
+}
+
+/* Resize logo */
+.menu-item img {
+    width: 50px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Make sure it doesn't overflow */
+    transition: color 0.3s; /* Smooth hover effect */
+    border: 2px solid #c7c3c1; /* Add border to create a box effect */
+    border-radius: 10px; /* Add rounded corners */
+    background-color: #fff; /* Set background color for the box */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+/* Style for the parent menu button */
+.toggle-btn {
+    background: none; /* No background */
+    border: none; /* Remove border */
+    font-size: 0.8rem; /* Match font size with other menu items */
+    font-family: "Libre Baskerville", serif; /* Match existing font */
+    color: black; /* Default text color */
+    padding: 0; /* Remove padding */
+    margin-left: 5px; /* Space before the icon */
+    cursor: pointer; /* Pointer cursor for better UX */
+    transition: color 0.3s; /* Smooth color transition */
+    font-weight: 550; /* Match font weight */
+    display: inline-flex; /* Align with text */
+    align-items: center; /* Center align icon */
+}
+
+.toggle-btn:hover {
+    color: #a53501; /* Dark red color on hover */
+    background-color: white;
+}
+
+/* Add a ">" icon to the button */
+.toggle-btn::after {
+    content: ""; /* Display the arrow icon */
+    font-size: 0.9rem; /* Slightly smaller for a clean look */
+    margin-left: 5px; /* Add space before the icon */
+    transition: transform 0.3s; /* Smooth rotation */
+}
+
+#menu-arrow::after {
+    content: " ≫";
+}
+
+/* Rotate the arrow when the submenu is visible */
+.menu-item:hover .toggle-btn::after {
+    transform: rotate(90deg); /* Rotate the arrow downward */
+}
+
+/* New submenu styling hizmetlerimiz etc*/
+.submenu-down {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    left: 0%; /* Position submenu to the right of the parent */
+    padding: 0px 0;
+    min-width: 200px; /* Set minimum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+    font-family: "Poppins", serif;
+    list-style: none;
+    background-color: whitesmoke;
+}
+
+/* Submenu buttons styling */
+.submenu-btn {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    background: none; /* No background for buttons */
+    border: none; /* Remove border */
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Poppins", serif;
+    cursor: pointer; /* Pointer cursor for better UX */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+.submenu-btn:hover {
+    color: #a53501; /* Change text color on hover */
+    font-weight: 420;
+    background: none;
+}
+
+/* Show submenu on hover for parent */
+.menu-item:hover .submenu-down {
+    display: block; /* Show submenu when hovering over parent */
+}
+
+/* Remove arrow icons from submenu buttons */
+.submenu-btn::after {
+    content: ""; /* Remove arrow icon */
+    margin-left: 0; /* Remove space before icon */
+}
+
+#submenu-arrow::after {
+    content: " ⇒";
+    transition: transform 0.3s ease; /* Add transition for smooth movement */
+    display: inline-block; /* Ensure it behaves like an inline element */
+    margin-left: 5px; /* Space between the text and arrow */
+}
+
+#submenu-arrow:hover::after {
+    transform: translateX(15px); /* Move the arrow to the right */
+}
+
+
+
+/* Hizmetlerimiz sub-submenu style */
+.sub-submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    top: 0; /* Align to the top of the parent item */
+    left: 100%; /* Position it to the right of the parent */
+    padding: 0px 0;
+    min-width: 200px; /* Set minimum width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+    font-family: "Poppins", serif;
+    list-style: none;
+    background-color: white; /* Add background color */
+}
+
+/* Submenu buttons styling */
+.sub-submenu li button {
+    padding: 8px 15px;
+    display: block;
+    font-size: 1rem;
+    color: black;
+    background-color: whitesmoke; /* Consistent background */
+    font-weight: 400;
+    border: 2px solid white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sub-submenu li button:hover {
+    background-color: #f0f0f0;
+    color: #a53501; /* Hover color */
+}
+
+/* Show submenu when hovering over the "OSGB Hizmetleri" item */
+.menu-item:hover .sub-submenu {
+    display: block; /* Display submenu */
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    nav {
+        padding: 5px 0;
+        height: 35px;
+    }
+    .menu {
+        gap: 10px;
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .menu-item > a {
+        font-size: 0.01rem;
+        padding: 8px 10px;
+    }
+    .menu-item-title {
+        font-size: 2rem;
+        padding: 8px 10px;
+    }
+    .submenu li a, .submenu-btn {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+    .hamburger {
+        display: block; /* Show hamburger menu */
+        font-size: 2.04rem; /* 1.7 times bigger than 1.2rem */
+        top: 20px;
+        left: 25px; /* Adjusted margin */
+        position: absolute;
+        background-color: white; /* White background color */
+        z-index: 1001; /* Ensure it is on top of everything */
+        padding: 5px; /* Add padding for better touch area */
+        border-radius: 5px; /* Add border radius for rounded corners */
+    }
+    .menu {
+        display: none; /* Hide menu by default */
+    }
+    .menu.active {
+        display: flex; /* Show menu when active */
+        flex-direction: column; /* Stack menu items vertically */
+        position: fixed; /* Fix the menu to the screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Background color for the menu */
+        z-index: 1000; /* Ensure menu is on top of everything */
+        overflow-y: auto; /* Enable scrolling if the menu is too tall */
+    }
+    .toggle-btn {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    nav {
+        padding: 8px 0;
+        height: 38px;
+    }
+    .menu {
+        gap: 15px;
+    }
+    .menu-item > a {
+        font-size: 0.01rem;
+        padding: 9px 12px;
+    }
+    .menu-item-title {
+        font-size: 2rem;
+        padding: 9px 12px;
+    }
+    .submenu li a, .submenu-btn {
+        font-size: 0.9rem;
+        padding: 9px 12px;
+    }
+    .hamburger {
+        display: block; /* Show hamburger menu */
+        font-size: 2.38rem; /* 1.7 times bigger than 1.4rem */
+        top: 20px;
+        left: 25px; /* Adjusted margin */
+        position: absolute;
+        background-color: white; /* White background color */
+        z-index: 1001; /* Ensure it is on top of everything */
+        padding: 5px; /* Add padding for better touch area */
+        border-radius: 5px; /* Add border radius for rounded corners */
+    }
+    .menu {
+        display: none; /* Hide menu by default */
+    }
+    .menu.active {
+        display: flex; /* Show menu when active */
+        flex-direction: column; /* Stack menu items vertically */
+        position: fixed; /* Fix the menu to the screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white; /* Background color for the menu */
+        z-index: 1000; /* Ensure menu is on top of everything */
+        overflow-y: auto; /* Enable scrolling if the menu is too tall */
+    }
+    .toggle-btn {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        padding: 10px 0;
+        height: 40px;
+    }
+    .menu {
+        gap: 20px;
+    }
+    .menu-item > a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .menu-item-title {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+    .submenu li a, .submenu-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .hamburger {
+        display: none; /* Hide hamburger menu */
+        font-size: 2.55rem; /* 1.7 times bigger than 1.5rem */
+        top: 10px;
+        right: 40px;
+        position: absolute;
+    }
+    .menu {
+        display: flex; /* Show menu by default */
+        flex-direction: row; /* Align menu items in a row */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    nav {
+        padding: 10px 0;
+        height: 40px;
+    }
+    .menu {
+        gap: 20px;
+    }
+    .menu-item > a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .menu-item-title {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+    .submenu li a, .submenu-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .hamburger {
+        display: none; /* Hide hamburger menu */
+        font-size: 2.55rem; /* 1.7 times bigger than 1.5rem */
+        top: 10px;
+        right: 50px;
+        position: absolute;
+    }
+    .menu {
+        display: flex; /* Show menu by default */
+        flex-direction: row; /* Align menu items in a row */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    nav {
+        padding: 10px 0;
+        height: 40px;
+    }
+    .menu {
+        gap: 20px;
+    }
+    .menu-item > a {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .menu-item-title {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+    .submenu li a, .submenu-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+    .hamburger {
+        display: none; /* Hide hamburger menu */
+        font-size: 2.55rem; /* 1.7 times bigger than 1.5rem */
+        top: 10px;
+        right: 60px;
+        position: absolute;
+    }
+    .menu {
+        display: flex; /* Show menu by default */
+        flex-direction: row; /* Align menu items in a row */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    nav {
+        padding: 10px 0;
+        height: 45px;
+    }
+    .menu {
+        gap: 25px;
+    }
+    .menu-item > a {
+        font-size: 1.1rem;
+        padding: 12px 18px;
+    }
+    .menu-item-title {
+        font-size: 1.2rem;
+        padding: 12px 18px;
+    }
+    .submenu li a, .submenu-btn {
+        font-size: 1.1rem;
+        padding: 12px 18px;
+    }
+    .hamburger {
+        display: none; /* Hide hamburger menu */
+        font-size: 2.7rem; /* 1.7 times bigger than 1.6rem */
+        top: 10px;
+        right: 70px;
+        position: absolute;
+    }
+    .menu {
+        display: flex; /* Show menu by default */
+        flex-direction: row; /* Align menu items in a row */
+    }
+}
+
+/****** Menu End *********/
+
+
+/*Header Styles Start*/
+
+/* Header container styles */
+.header-container {
+    /*background-color:;  Optional: Light background for the section */
+    padding: 50px 20px; /* Add spacing around the section */
+}
+
+/* Flexbox for layout */
+.header-content {
+    display: flex; /* Align children side by side */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between text and image */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between elements */
+    text-align: justify
+}
+
+/* Header text styles */
+.header-text {
+    max-width: 50%; /* Take half the width */
+}
+
+.header-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: bold;
+}
+
+.header-text em {
+    color: #d83200; /* Highlight color */
+    font-style: italic;
+}
+
+.header-text p {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.header-text .btn-services {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d83200;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.header-text .btn-services:hover {
+    background-color: #a53501; /* Darker hover effect */
+}
+
+/* Header image styles */
+.header-image {
+    max-width: 48%; /* Take half the width */
+    text-align: right; /* Align image to the right */
+}
+
+.header-image img {
+    max-width: 100%; /* Make image responsive */
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    .header-container {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+    .header-content {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+    }
+    .header-text {
+        max-width: 100%; /* Take full width */
+    }
+    .header-text h1 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+    .header-text p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    .header-text .btn-services {
+        font-size: 0.9rem; /* Adjust font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+    .header-image {
+        max-width: 100%; /* Take full width */
+        text-align: center; /* Center align image */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .header-container {
+        padding: 40px 15px; /* Adjust padding for tablets */
+    }
+    .header-content {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center; /* Center align text */
+    }
+    .header-text {
+        max-width: 100%; /* Take full width */
+    }
+    .header-text h1 {
+        font-size: 1.75rem; /* Adjust font size */
+    }
+    .header-text p {
+        font-size: 0.95rem; /* Adjust font size */
+    }
+    .header-text .btn-services {
+        font-size: 0.95rem; /* Adjust font size */
+        padding: 9px 18px; /* Adjust padding */
+    }
+    .header-image {
+        max-width: 100%; /* Take full width */
+        text-align: center; /* Center align image */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-container {
+        padding: 50px 20px; /* Default padding */
+    }
+    .header-content {
+        flex-direction: row; /* Align elements side by side */
+        text-align: justify; /* Justify text */
+    }
+    .header-text {
+        max-width: 50%; /* Take half the width */
+    }
+    .header-text h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    .header-text p {
+        font-size: 1rem; /* Default font size */
+    }
+    .header-text .btn-services {
+        font-size: 1rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .header-image {
+        max-width: 48%; /* Default width */
+        text-align: right; /* Align image to the right */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .header-container {
+        padding: 50px 20px; /* Default padding */
+    }
+    .header-content {
+        flex-direction: row; /* Align elements side by side */
+        text-align: justify; /* Justify text */
+    }
+    .header-text {
+        max-width: 50%; /* Take half the width */
+    }
+    .header-text h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    .header-text p {
+        font-size: 1rem; /* Default font size */
+    }
+    .header-text .btn-services {
+        font-size: 1rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .header-image {
+        max-width: 48%; /* Default width */
+        text-align: right; /* Align image to the right */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    .header-container {
+        padding: 50px 20px; /* Default padding */
+    }
+    .header-content {
+        flex-direction: row; /* Align elements side by side */
+        text-align: justify; /* Justify text */
+    }
+    .header-text {
+        max-width: 50%; /* Take half the width */
+    }
+    .header-text h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    .header-text p {
+        font-size: 1rem; /* Default font size */
+    }
+    .header-text .btn-services {
+        font-size: 1rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .header-image {
+        max-width: 48%; /* Default width */
+        text-align: right; /* Align image to the right */
+    }
+}
+
+
+/* Header Styles End*/
+
+
+
+/* Why Us Section Styles Start */
+/* General Styling for the Section */
+#why-us-section {
+    /*background-color: ;  Light gray background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Styling for the Main Heading */
+#why-us-section h1 {
+    display: block; /* Ensure it takes the full width available */
+    font-size: 1.5rem;
+    color: white; /* Font color */
+    margin-bottom: 30px;
+    font-weight: bold;
+    background-color: #d83200; /* Background color */
+    padding: 10px 20px; /* Padding around the text */
+    border: 2px solid #d83200; /* Border color */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    width: fit-content; /* Dynamic width based on text size */
+    margin-left: auto; /* Center the heading */
+    margin-right: auto; /* Center the heading */
+}
+
+/* Styling for Individual Items */
+.why-us-item {
+    display: inline-block; /* Allows items to sit next to each other */
+    width: 25%; /* Each item takes up 25% of the width */
+    margin: 10px; /* Add spacing between items */
+    background: #fff3f3; /* White background for each box */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a modern look */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    text-align: justify;
+}
+
+.why-us-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.5); /* Glow effect */
+}
+
+/* Styling for the Subheadings */
+.why-us-item h2 {
+    font-size: 1.2rem;
+    color: #d83200; /* A red color for subheadings */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styling for the Images */
+.why-us-item img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Styling for the Paragraphs */
+.why-us-item p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+}
+
+
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    #why-us-section {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+    .why-us-item {
+        width: 100%; /* Each item takes full width */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+    #why-us-section h1 {
+        font-size: 1.2rem; /* Adjust font size */
+        padding: 8px 15px; /* Adjust padding */
+    }
+    .why-us-item h2 {
+        font-size: 1rem; /* Adjust font size */
+    }
+    .why-us-item p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    .why-us-item img {
+        max-width: 60px; /* Adjust image size */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #why-us-section {
+        padding: 40px 15px; /* Adjust padding for tablets */
+    }
+    .why-us-item {
+        width: 48%; /* Each item takes half the width */
+        margin: 10px 1%; /* Adjust margin for smaller screens */
+    }
+    #why-us-section h1 {
+        font-size: 1.3rem; /* Adjust font size */
+        padding: 9px 18px; /* Adjust padding */
+    }
+    .why-us-item h2 {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    .why-us-item p {
+        font-size: 0.95rem; /* Adjust font size */
+    }
+    .why-us-item img {
+        max-width: 70px; /* Adjust image size */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #why-us-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    .why-us-item {
+        width: 30%; /* Each item takes 30% of the width */
+        margin: 10px 1.5%; /* Adjust margin */
+    }
+    #why-us-section h1 {
+        font-size: 1.4rem; /* Adjust font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .why-us-item h2 {
+        font-size: 1.15rem; /* Adjust font size */
+    }
+    .why-us-item p {
+        font-size: 1rem; /* Default font size */
+    }
+    .why-us-item img {
+        max-width: 75px; /* Adjust image size */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #why-us-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    .why-us-item {
+        width: 25%; /* Each item takes 25% of the width */
+        margin: 10px; /* Default margin */
+    }
+    #why-us-section h1 {
+        font-size: 1.5rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .why-us-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .why-us-item p {
+        font-size: 1rem; /* Default font size */
+    }
+    .why-us-item img {
+        max-width: 80px; /* Default image size */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    #why-us-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    .why-us-item {
+        width: 25%; /* Each item takes 25% of the width */
+        margin: 10px; /* Default margin */
+    }
+    #why-us-section h1 {
+        font-size: 1.5rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    .why-us-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .why-us-item p {
+        font-size: 1rem; /* Default font size */
+    }
+    .why-us-item img {
+        max-width: 80px; /* Default image size */
+    }
+}
+
+
+
+/* Why Us Section Styles End */
+
+
+
+/* left hand menu test start (deprecated)*/
+
+
+.left-hand-menu {
+    width: 250px;
+    float: left;
+    margin-top: 50px;
+}
+
+.left-hand-menu-main-title, .left-hand-menu-sub-title {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-hand-menu-main-title {
+    background-color: #d83200;
+    color: white;
+    margin-top: 5px;
+}
+
+.left-hand-menu-sub-menu {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s ease-out;
+    background-color: #f1f1f1;
+}
+
+.left-hand-menu-sub-menu.open {
+    max-height: 1000px; /* Adjust as needed */
+    transition: max-height 0.8s ease-in;
+}
+
+.left-hand-menu-sub-title {
+    padding-left: 20px;
+}
+
+.left-hand-menu-content {
+    margin-top: 100px;
+    margin-left: 360px;
+    padding: 10px;
+    margin-bottom: 700px;
+    text-align: justify;
+}
+
+footer .services-container {
+    display: flex;
+    align-items: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20%;
+    margin-right: 15%;
+    background-color: #f8dada;
+    position: static;
+}
+
+
+
+/* left hand menu end  (deprecated) */
+
+/* Services Section Styles Start */
+
+/* General Styling for the Services Section */
+#services-section {
+    background-color: #fff; /* White background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+
+#services-section .btn-services {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d83200;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#services-section .btn-services:hover {
+    background-color: #a53501; /* Darker hover effect */
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/* Styling for the Main Heading (h1) */
+#services-section h1 {
+    color: #d83200; /* Red color for the main heading */
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Styling for the Subheading (h2) */
+#services-section h2 {
+    color: #d83200; /* Lighter orange color for subheadings */
+    font-size: 2rem;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+#services-section h2 a {
+    color: black; /* Lighter orange color for subheadings */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#services-section h2 a:hover {
+    color: #a53501; /* Lighter orange color for subheadings */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Styling for the List of Services */
+#services-section ul {
+    list-style: none; /* Remove the default list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for Individual Service Items */
+#services-section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Light border for each service item */
+    border-radius: 10px;
+    background-color: #ffefef; /* Slightly  background for the list items */
+    width: 70%;
+    margin-left: 15%;
+}
+
+/* Styling for the Service Icons (Images) */
+#services-section ul li img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+/* Styling for the Text Section inside the Service Item */
+#services-section ul li .text {
+    text-align: left;
+}
+
+
+
+/* Styling for the Service Title (h4) */
+#services-section ul li .text h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Styling for the Service Description */
+#services-section ul li .text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+/* Styling for the "Daha Fazla" Link */
+#services-section ul li .text a {
+    color: #d83200; /* Match the main heading color for the link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#services-section ul li .text a:hover {
+    color: #a53501; /* Lighter orange on hover */
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    #services-section {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+    #services-section .btn-services {
+        font-size: 1.2rem; /* Adjust font size */
+        padding: 8px 16px; /* Adjust padding */
+    }
+    #services-section h1 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+    #services-section h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+    #services-section ul li {
+        width: 100%; /* Each item takes full width */
+        margin-left: 0; /* Remove left margin */
+    }
+    #services-section ul li img {
+        width: 50px; /* Adjust image size */
+        height: 50px; /* Adjust image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1rem; /* Adjust font size */
+    }
+    #services-section ul li .text p {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #services-section {
+        padding: 40px 15px; /* Adjust padding for tablets */
+    }
+    #services-section .btn-services {
+        font-size: 1.3rem; /* Adjust font size */
+        padding: 9px 18px; /* Adjust padding */
+    }
+    #services-section h1 {
+        font-size: 1.75rem; /* Adjust font size */
+    }
+    #services-section h2 {
+        font-size: 1.75rem; /* Adjust font size */
+    }
+    #services-section ul li {
+        width: 100%; /* Each item takes full width */
+        margin-left: 0; /* Remove left margin */
+    }
+    #services-section ul li img {
+        width: 60px; /* Adjust image size */
+        height: 60px; /* Adjust image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    #services-section ul li .text p {
+        font-size: 0.95rem; /* Adjust font size */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #services-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    #services-section .btn-services {
+        font-size: 1.4rem; /* Adjust font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    #services-section h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section ul li {
+        width: 80%; /* Each item takes 80% of the width */
+        margin-left: 10%; /* Center align */
+    }
+    #services-section ul li img {
+        width: 70px; /* Default image size */
+        height: 70px; /* Default image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    #services-section ul li .text p {
+        font-size: 1rem; /* Default font size */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #services-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    #services-section .btn-services {
+        font-size: 1.5rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    #services-section h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section ul li {
+        width: 70%; /* Each item takes 70% of the width */
+        margin-left: 15%; /* Center align */
+    }
+    #services-section ul li img {
+        width: 70px; /* Default image size */
+        height: 70px; /* Default image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    #services-section ul li .text p {
+        font-size: 1rem; /* Default font size */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    #services-section {
+        padding: 50px 20px; /* Default padding */
+    }
+    #services-section .btn-services {
+        font-size: 1.5rem; /* Default font size */
+        padding: 10px 20px; /* Default padding */
+    }
+    #services-section h1 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    #services-section ul li {
+        width: 70%; /* Each item takes 70% of the width */
+        margin-left: 15%; /* Center align */
+    }
+    #services-section ul li img {
+        width: 70px; /* Default image size */
+        height: 70px; /* Default image size */
+    }
+    #services-section ul li .text h4 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    #services-section ul li .text p {
+        font-size: 1rem; /* Default font size */
+    }
+}
+
+
+
+/* Services Section Styles End */
+
+
+
+/* Services Page Styles Start */
+
+/* Services Section Container */
+#services-page-section {
+    background-color: white; /* Light gray background */
+    padding: 50px 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align the text */
+    margin-top: 100px;
+}
+
+/* Section Title (h1) */
+#services-page-section h1 {
+    font-size: 2rem; /* Larger font size for the title */
+    font-weight: bold;
+    margin-top: -30px;
+    margin-bottom: 4px; /* Add spacing below the title */
+    color: white; /* Dark text color */
+}
+
+#services-page-section h2 > a {
+    font-size: 1.5rem; /* Larger font size for the title */
+    font-weight: bold;
+    margin-bottom: 40px; /* Add spacing below the title */
+    color: #d83200; /* Dark text color */
+    text-decoration: none;
+}
+
+#services-page-section h2 > a:hover {
+    color: #a53501; /* Change color on hover */
+    text-decoration: none;
+}
+
+/* Services Items Container */
+.services-page-item {
+    background-color: #fff3f3; /* Light background for the boxes */
+    border: 2px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Add padding inside the boxes */
+    margin: 20px auto; /* Space between boxes */
+    max-width: 300px; /* Set a fixed width for the boxes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    display: inline-block; /* Allow boxes to align side by side */
+    text-align: center; /* Center-align the content */
+}
+
+/* Hover Effect for Boxes */
+.services-page-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.5); /* Glow effect */
+}
+
+/* Service Icons (img) */
+.services-page-item img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin-bottom: 15px; /* Space between icon and title */
+    display: block;
+    margin-left: auto; /* Center align */
+    margin-right: auto; /* Center align */
+}
+
+/* Service Title (h2) */
+.services-page-item h2 {
+    font-size: 1.2rem; /* Medium font size */
+    font-weight: bold;
+    margin: 10px 0; /* Add spacing above and below */
+    color: #d83200; /* Highlight color for the titles */
+}
+
+/* Service Links */
+.services-page-item h2 a {
+    font-size: 1rem !important;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the h2 color */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover Effect for Links */
+.services-page-item h2 a:hover {
+    color: #a53501; /* Change color on hover */
+}
+
+/* Content Display */
+/* Styles for content display */
+.content-display {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 10px solid #ddd;
+    margin-top: -40px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.image-content {
+    flex: 0 0 250px; /* Adjust the width as needed */
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    #services-page-section {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+        margin-top: 50px; /* Adjust margin for smaller screens */
+    }
+    #services-page-section h1 {
+        font-size: 1.5rem; /* Adjust font size */
+        margin-top: -20px; /* Adjust margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    .services-page-item {
+        max-width: 100%; /* Each item takes full width */
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+    .services-page-item img {
+        width: 40px; /* Adjust image size */
+        height: 40px; /* Adjust image size */
+    }
+    .services-page-item h2 {
+        font-size: 1rem; /* Adjust font size */
+    }
+    .services-page-item h2 a {
+        font-size: 0.9rem !important; /* Adjust font size */
+    }
+    .content-display {
+        flex-direction: column; /* Stack content vertically */
+    }
+    .text-content h2 {
+        text-align: left;
+    }
+    .image-content {
+        flex: 0 0 auto; /* Adjust the width */
+        margin-bottom: 20px; /* Add margin below the image */
+    }
+
+    .image-content img {
+    max-width: 7%;
+    height: auto;
+    display: none;
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #services-page-section {
+        padding: 40px 15px; /* Adjust padding for tablets */
+        margin-top: 75px; /* Adjust margin for tablets */
+    }
+    #services-page-section h1 {
+        font-size: 1.75rem; /* Adjust font size */
+        margin-top: -25px; /* Adjust margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.3rem; /* Adjust font size */
+    }
+    .services-page-item {
+        max-width: 100%; /* Each item takes full width */
+        margin: 15px 0; /* Adjust margin for tablets */
+    }
+    .services-page-item img {
+        width: 45px; /* Adjust image size */
+        height: 45px; /* Adjust image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    .services-page-item h2 a {
+        font-size: 1rem !important; /* Adjust font size */
+    }
+    .content-display {
+        flex-direction: column; /* Stack content vertically */
+    }
+    .text-content h2 {
+        text-align: left;
+    }
+    .image-content {
+        flex: 0 0 auto; /* Adjust the width */
+        margin-bottom: 20px; /* Add margin below the image */
+    }
+    .image-content img {
+    max-width: 7%;
+    height: auto;
+    display: none;
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #services-page-section {
+        padding: 50px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #services-page-section h1 {
+        font-size: 2rem; /* Default font size */
+        margin-top: -30px; /* Default margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.5rem; /* Default font size */
+    }
+    .services-page-item {
+        max-width: 300px; /* Default width */
+        margin: 20px auto; /* Default margin */
+    }
+    .services-page-item img {
+        width: 50px; /* Default image size */
+        height: 50px; /* Default image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .services-page-item h2 a {
+        font-size: 1rem !important; /* Default font size */
+    }
+    .content-display {
+        flex-direction: row; /* Default flex direction */
+    }
+    .text-content h2 {
+        text-align: left;
+    }
+    .image-content {
+        flex: 0 0 250px; /* Default width */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #services-page-section {
+        padding: 50px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #services-page-section h1 {
+        font-size: 2rem; /* Default font size */
+        margin-top: -30px; /* Default margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.5rem; /* Default font size */
+    }
+    .services-page-item {
+        max-width: 300px; /* Default width */
+        margin: 20px auto; /* Default margin */
+    }
+    .services-page-item img {
+        width: 50px; /* Default image size */
+        height: 50px; /* Default image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .services-page-item h2 a {
+        font-size: 1rem !important; /* Default font size */
+    }
+    .content-display {
+        flex-direction: row; /* Default flex direction */
+    }
+    .image-content {
+        flex: 0 0 250px; /* Default width */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    #services-page-section {
+        padding: 50px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #services-page-section h1 {
+        font-size: 2rem; /* Default font size */
+        margin-top: -30px; /* Default margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.5rem; /* Default font size */
+    }
+    .services-page-item {
+        max-width: 300px; /* Default width */
+        margin: 20px auto; /* Default margin */
+    }
+    .services-page-item img {
+        width: 50px; /* Default image size */
+        height: 50px; /* Default image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .services-page-item h2 a {
+        font-size: 1rem !important; /* Default font size */
+    }
+    .content-display {
+        flex-direction: row; /* Default flex direction */
+    }
+    .image-content {
+        flex: 0 0 250px; /* Default width */
+    }
+}
+
+/* Extra Large Devices (1201px to 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    #services-page-section {
+        padding: 50px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #services-page-section h1 {
+        font-size: 2rem; /* Default font size */
+        margin-top: -30px; /* Default margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.5rem; /* Default font size */
+    }
+    .services-page-item {
+        max-width: 250px; /* Smaller width */
+        margin: 20px auto; /* Default margin */
+    }
+    .services-page-item img {
+        width: 45px; /* Smaller image size */
+        height: 45px; /* Smaller image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.1rem; /* Smaller font size */
+    }
+    .services-page-item h2 a {
+        font-size: 0.95rem !important; /* Smaller font size */
+    }
+    .content-display {
+        flex-direction: row; /* Default flex direction */
+    }
+    .image-content {
+        flex: 0 0 200px; /* Smaller width */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    #services-page-section {
+        padding: 60px 30px; /* Adjust padding for ultra large screens */
+        margin-top: 120px; /* Adjust margin for ultra large screens */
+    }
+    #services-page-section h1 {
+        font-size: 2.2rem; /* Adjust font size */
+        margin-top: -35px; /* Adjust margin */
+    }
+    #services-page-section h2 > a {
+        font-size: 1.7rem; /* Adjust font size */
+    }
+    .services-page-item {
+        max-width: 280px; /* Adjust width */
+        margin: 25px auto; /* Adjust margin */
+    }
+    .services-page-item img {
+        width: 50px; /* Default image size */
+        height: 50px; /* Default image size */
+    }
+    .services-page-item h2 {
+        font-size: 1.2rem; /* Default font size */
+    }
+    .services-page-item h2 a {
+        font-size: 1rem !important; /* Default font size */
+    }
+    .content-display {
+        flex-direction: row; /* Default flex direction */
+    }
+    .image-content {
+        flex: 0 0 250px; /* Default width */
+    }
+}
+
+/* Services Page Styles End */
+
+
+/* About US Page Styles Start */
+
+.about-us h1 {
+    margin-top: 100px;
+    font-size: 2rem; /* Larger font size for the title */
+    font-weight: bold;
+    margin-bottom: 40px; /* Add spacing below the title */
+    color: white; /* Dark text color */
+    text-align: center; /* Center-align the text */
+}
+
+.about-us p {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1rem; /* Regular font size for the text */
+    color: black; /* Light gray text color */
+    line-height: 2; /* Increase line height for readability */
+    margin-bottom: 50px; /* Add spacing below the paragraphs */
+    text-align: justify;
+}
+
+.about-us ol {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1rem; /* Regular font size for the text */
+    color: black; /* Light gray text color */
+    line-height: 2; /* Increase line height for readability */
+    margin-bottom: 50px; /* Add spacing below the paragraphs */
+    text-align: justify;
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    .about-us h1 {
+        margin-top: 50px; /* Adjust margin for smaller screens */
+        font-size: 1.5rem; /* Adjust font size */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 5%; /* Adjust margins for smaller screens */
+        margin-right: 5%; /* Adjust margins for smaller screens */
+        font-size: 0.9rem; /* Adjust font size */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .about-us h1 {
+        margin-top: 75px; /* Adjust margin for tablets */
+        font-size: 1.75rem; /* Adjust font size */
+        margin-bottom: 35px; /* Adjust margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 10%; /* Adjust margins for tablets */
+        margin-right: 10%; /* Adjust margins for tablets */
+        font-size: 0.95rem; /* Adjust font size */
+        margin-bottom: 40px; /* Adjust margin */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-us h1 {
+        margin-top: 100px; /* Default margin */
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 50px; /* Default margin */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .about-us h1 {
+        margin-top: 100px; /* Default margin */
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 50px; /* Default margin */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    .about-us h1 {
+        margin-top: 100px; /* Default margin */
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 50px; /* Default margin */
+    }
+}
+
+/* Extra Large Devices (1201px to 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .about-us h1 {
+        margin-top: 100px; /* Default margin */
+        font-size: 1.8rem; /* Slightly smaller font size */
+        margin-bottom: 35px; /* Adjust margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 12%; /* Adjust margins */
+        margin-right: 12%; /* Adjust margins */
+        font-size: 0.95rem; /* Slightly smaller font size */
+        margin-bottom: 45px; /* Adjust margin */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    .about-us h1 {
+        margin-top: 120px; /* Increase margin for ultra large screens */
+        font-size: 2.2rem; /* Increase font size */
+        margin-bottom: 45px; /* Increase margin */
+    }
+    .about-us p, .about-us ol {
+        margin-left: 18%; /* Increase margins */
+        margin-right: 18%; /* Increase margins */
+        font-size: 1.1rem; /* Increase font size */
+        margin-bottom: 55px; /* Increase margin */
+    }
+}
+
+/* About US Page Styles End */
+
+/* FAQ Section Start */
+
+/* FAQ Section Styles */
+#faq-section {
+    background-color: #fff; /* White background */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+/* FAQ Header */
+#faq-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white; /* Orange color for the main header */
+    margin-bottom: 20px;
+}
+
+/* FAQ Description */
+#faq-section p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555; /* Light gray for paragraph text */
+    margin-bottom: 40px;
+}
+
+/* FAQ Question (h3) */
+#faq-section h3 {
+    font-size: 1.2rem;
+    color: #d83200; /* Red color for question text */
+    margin-bottom: 10px;
+}
+
+/* FAQ Answer (p) */
+#faq-section div p {
+    font-size: 1rem;
+    color: #666; /* Slightly lighter gray for answer text */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Add some spacing between question and answer */
+#faq-section div {
+    margin-bottom: 30px;
+}
+
+/* Make the FAQ items stand out with a border */
+#faq-section div {
+    padding-left: 20px;
+}
+
+/* Add hover effect for questions */
+#faq-section h3:hover {
+    color: #a53501; /* A slightly different shade of orange on hover */
+    cursor: pointer;
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    #faq-section {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+    #faq-section h2 {
+        font-size: 1.5rem; /* Adjust font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+    #faq-section p {
+        font-size: 0.9rem; /* Adjust font size */
+        margin-bottom: 30px; /* Adjust margin */
+    }
+    #faq-section h3 {
+        font-size: 1rem; /* Adjust font size */
+        margin-bottom: 8px; /* Adjust margin */
+    }
+    #faq-section div p {
+        font-size: 0.9rem; /* Adjust font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+    #faq-section div {
+        margin-bottom: 20px; /* Adjust margin */
+        padding-left: 10px; /* Adjust padding */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #faq-section {
+        padding: 30px 15px; /* Adjust padding for tablets */
+    }
+    #faq-section h2 {
+        font-size: 1.75rem; /* Adjust font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    #faq-section p {
+        font-size: 0.95rem; /* Adjust font size */
+        margin-bottom: 35px; /* Adjust margin */
+    }
+    #faq-section h3 {
+        font-size: 1.1rem; /* Adjust font size */
+        margin-bottom: 9px; /* Adjust margin */
+    }
+    #faq-section div p {
+        font-size: 0.95rem; /* Adjust font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    #faq-section div {
+        margin-bottom: 25px; /* Adjust margin */
+        padding-left: 15px; /* Adjust padding */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #faq-section {
+        padding: 40px 20px; /* Default padding */
+    }
+    #faq-section h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    #faq-section h3 {
+        font-size: 1.2rem; /* Default font size */
+        margin-bottom: 10px; /* Default margin */
+    }
+    #faq-section div p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section div {
+        margin-bottom: 30px; /* Default margin */
+        padding-left: 20px; /* Default padding */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #faq-section {
+        padding: 40px 20px; /* Default padding */
+    }
+    #faq-section h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    #faq-section h3 {
+        font-size: 1.2rem; /* Default font size */
+        margin-bottom: 10px; /* Default margin */
+    }
+    #faq-section div p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section div {
+        margin-bottom: 30px; /* Default margin */
+        padding-left: 20px; /* Default padding */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    #faq-section {
+        padding: 40px 20px; /* Default padding */
+    }
+    #faq-section h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 40px; /* Default margin */
+    }
+    #faq-section h3 {
+        font-size: 1.2rem; /* Default font size */
+        margin-bottom: 10px; /* Default margin */
+    }
+    #faq-section div p {
+        font-size: 1rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    #faq-section div {
+        margin-bottom: 30px; /* Default margin */
+        padding-left: 20px; /* Default padding */
+    }
+}
+
+/* Extra Large Devices (1201px to 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    #faq-section {
+        padding: 40px 20px; /* Default padding */
+    }
+    #faq-section h2 {
+        font-size: 1.8rem; /* Slightly smaller font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    #faq-section p {
+        font-size: 0.95rem; /* Slightly smaller font size */
+        margin-bottom: 35px; /* Adjust margin */
+    }
+    #faq-section h3 {
+        font-size: 1.1rem; /* Slightly smaller font size */
+        margin-bottom: 9px; /* Adjust margin */
+    }
+    #faq-section div p {
+        font-size: 0.95rem; /* Slightly smaller font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    #faq-section div {
+        margin-bottom: 25px; /* Adjust margin */
+        padding-left: 15px; /* Adjust padding */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    #faq-section {
+        padding: 50px 30px; /* Increase padding for ultra large screens */
+    }
+    #faq-section h2 {
+        font-size: 2.2rem; /* Increase font size */
+        margin-bottom: 22px; /* Increase margin */
+    }
+    #faq-section p {
+        font-size: 1.1rem; /* Increase font size */
+        margin-bottom: 45px; /* Increase margin */
+    }
+    #faq-section h3 {
+        font-size: 1.3rem; /* Increase font size */
+        margin-bottom: 12px; /* Increase margin */
+    }
+    #faq-section div p {
+        font-size: 1.1rem; /* Increase font size */
+        margin-bottom: 22px; /* Increase margin */
+    }
+    #faq-section div {
+        margin-bottom: 35px; /* Increase margin */
+        padding-left: 25px; /* Increase padding */
+    }
+}
+
+/* FAQ Section End */
+
+
+
+
+
+/* ***** Forms Start ***** */
+/* Service Request Form Styling */
+#service-request-section {
+    padding: 30px 0;
+    background-color: #fff; /* Ensure background color is set */
+    margin-top: 100px;
+}
+
+#contact-us {
+    padding: 30px 0;
+    background-color: #fff; /* Ensure background color is set */
+    margin-top: 600px;
+}
+
+
+
+/* Form container */
+form {
+    max-width: 800px; /* Limit the width of the form */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #f8dada;
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative; /* Ensure proper stacking context */
+    z-index: 1; /* Ensure form is above any background */
+}
+
+/* Title */
+form h2 {
+    font-size: 2rem;
+    color: #d83200;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Fieldset container for form fields */
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+/* Input and textarea fields */
+input, textarea {
+    width: 100%; /* Make inputs full width */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    font-size: 1rem;
+    color: #000000;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Ensure textareas are resizable only vertically */
+textarea {
+    resize: vertical;
+    min-height: 100px; /* Set a minimum height */
+}
+
+/* For larger screens, show two input fields per row */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between items */
+}
+
+.form-row .half-width {
+    width: 48%; /* Each field takes up half the width */
+}
+
+/* Submit button styling */
+button {
+    background-color: #d83200;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #a53501;
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    #service-request-section {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+        margin-top: 50px; /* Adjust margin for smaller screens */
+    }
+    #contact-us {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+        margin-top: 300px; /* Adjust margin for smaller screens */
+    }
+    form {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    form h2 {
+        font-size: 1.5rem; /* Adjust font size */
+        margin-bottom: 15px; /* Adjust margin */
+    }
+    input, textarea {
+        padding: 10px; /* Adjust padding */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    .form-row {
+        flex-direction: column; /* Stack fields vertically */
+    }
+    .form-row .half-width {
+        width: 100%; /* Each field takes full width */
+    }
+    button {
+        font-size: 0.9rem; /* Adjust font size */
+        padding: 10px 15px; /* Adjust padding */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    #service-request-section {
+        padding: 25px 15px; /* Adjust padding for tablets */
+        margin-top: 75px; /* Adjust margin for tablets */
+    }
+    #contact-us {
+        padding: 25px 15px; /* Adjust padding for tablets */
+        margin-top: 400px; /* Adjust margin for tablets */
+    }
+    form {
+        padding: 18px; /* Adjust padding for tablets */
+    }
+    form h2 {
+        font-size: 1.75rem; /* Adjust font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    input, textarea {
+        padding: 11px; /* Adjust padding */
+        font-size: 0.95rem; /* Adjust font size */
+    }
+    .form-row {
+        flex-direction: column; /* Stack fields vertically */
+    }
+    .form-row .half-width {
+        width: 100%; /* Each field takes full width */
+    }
+    button {
+        font-size: 0.95rem; /* Adjust font size */
+        padding: 11px 18px; /* Adjust padding */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #service-request-section {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #contact-us {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 500px; /* Adjust margin for small laptops */
+    }
+    form {
+        padding: 20px; /* Default padding */
+    }
+    form h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    input, textarea {
+        padding: 12px; /* Default padding */
+        font-size: 1rem; /* Default font size */
+    }
+    .form-row {
+        flex-direction: row; /* Default flex direction */
+    }
+    .form-row .half-width {
+        width: 48%; /* Default width */
+    }
+    button {
+        font-size: 1rem; /* Default font size */
+        padding: 12px 20px; /* Default padding */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    #service-request-section {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #contact-us {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 600px; /* Default margin */
+    }
+    form {
+        padding: 20px; /* Default padding */
+    }
+    form h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    input, textarea {
+        padding: 12px; /* Default padding */
+        font-size: 1rem; /* Default font size */
+    }
+    .form-row {
+        flex-direction: row; /* Default flex direction */
+    }
+    .form-row .half-width {
+        width: 48%; /* Default width */
+    }
+    button {
+        font-size: 1rem; /* Default font size */
+        padding: 12px 20px; /* Default padding */
+    }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    #service-request-section {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #contact-us {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 600px; /* Default margin */
+    }
+    form {
+        padding: 20px; /* Default padding */
+    }
+    form h2 {
+        font-size: 2rem; /* Default font size */
+        margin-bottom: 20px; /* Default margin */
+    }
+    input, textarea {
+        padding: 12px; /* Default padding */
+        font-size: 1rem; /* Default font size */
+    }
+    .form-row {
+        flex-direction: row; /* Default flex direction */
+    }
+    .form-row .half-width {
+        width: 48%; /* Default width */
+    }
+    button {
+        font-size: 1rem; /* Default font size */
+        padding: 12px 20px; /* Default padding */
+    }
+}
+
+/* Extra Large Devices (1201px to 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    #service-request-section {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 100px; /* Default margin */
+    }
+    #contact-us {
+        padding: 30px 20px; /* Default padding */
+        margin-top: 600px; /* Default margin */
+    }
+    form {
+        padding: 20px; /* Default padding */
+    }
+    form h2 {
+        font-size: 1.8rem; /* Slightly smaller font size */
+        margin-bottom: 18px; /* Adjust margin */
+    }
+    input, textarea {
+        padding: 11px; /* Slightly smaller padding */
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+    .form-row {
+        flex-direction: row; /* Default flex direction */
+    }
+    .form-row .half-width {
+        width: 48%; /* Default width */
+    }
+    button {
+        font-size: 0.95rem; /* Slightly smaller font size */
+        padding: 11px 18px; /* Slightly smaller padding */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    #service-request-section {
+        padding: 40px 30px; /* Increase padding for ultra large screens */
+        margin-top: 120px; /* Increase margin for ultra large screens */
+    }
+    #contact-us {
+        padding: 40px 30px; /* Increase padding for ultra large screens */
+        margin-top: 700px; /* Increase margin for ultra large screens */
+    }
+    form {
+        padding: 25px; /* Increase padding */
+    }
+    form h2 {
+        font-size: 2.2rem; /* Increase font size */
+        margin-bottom: 22px; /* Increase margin */
+    }
+    input, textarea {
+        padding: 14px; /* Increase padding */
+        font-size: 1.1rem; /* Increase font size */
+    }
+    .form-row {
+        flex-direction: row; /* Default flex direction */
+    }
+    .form-row .half-width {
+        width: 48%; /* Default width */
+    }
+    button {
+        font-size: 1.1rem; /* Increase font size */
+        padding: 14px 22px; /* Increase padding */
+    }
+}
+
+/* ***** Service Request Form End ***** */
+
+
+
+
+/* Footer Start */
+
+/* Footer Styling */
+footer {
+    background-color: #fff; /* White background for footer */
+    padding: 50px 0; /* Padding around the footer */
+    font-family: Arial, sans-serif; /* Font for footer content */
+}
+
+/* Footer Main Section */
+footer .container {
+    display: flex;
+    align-items: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 15%;
+    margin-right: 20%;
+    background-color: #f8dada;
+}
+
+/* Google Map */
+footer .map-container {
+    width: 46%;
+    height: 350px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 1px solid #ddd; /* Optional: Add border for better visibility */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better design */
+    z-index: 900;
+}
+
+footer .footer-text {
+    max-width: 100%;
+    margin-right: 30%;
+    margin-left: 20%;
+
+}
+
+/* Footer Heading */
+
+.fake-button {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    background-color: #d83200;
+    border-radius: 5px;
+}
+
+.fake-button h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    font-weight: 900;
+    font-family: "Libre Baskerville", serif;;
+
+}
+
+footer h2 {
+    font-size: 2rem;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+footer p {
+    font-size: 1rem;
+    font-family: "Libre Baskerville", serif;;
+    color: black;
+    text-align: justify;
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+
+/* Social Media Container */
+.social-media {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Center the icons vertically */
+    padding: 20px 0; /* Optional: Adjust padding if needed */
+    margin-top: 15px;
+}
+
+/* Social Media List */
+.social-media ul {
+    display: flex; /* Align list items in a row */
+    gap: 20px; /* Space between icons */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Social Media List Items */
+.social-media ul li {
+    display: inline-block; /* Display list items inline */
+}
+
+/* Icon Styling */
+.social-media i {
+    font-size: 2rem; /* Size of the icon */
+    color: #333; /* Default color */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.social-media i:hover {
+    color: #a53501; /* Color on hover */
+}
+
+
+/* Footer Menu - Columns */
+footer .footer-menu {
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .footer-menu div {
+    width: 200px; /* Width for each column */
+}
+
+footer .footer-menu h4 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+footer .footer-menu ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer .footer-menu ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 0.9rem;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+footer .footer-menu ul li a:hover {
+    color: #d83200;
+}
+
+/* Submenu styles */
+footer .footer-menu .submenu {
+    display: none; /* Hide submenu by default */
+    padding-left: 15px;
+}
+
+footer .footer-menu ul li:hover .submenu {
+    display: block; /* Show submenu on hover */
+}
+
+/* Subfooter */
+.sub-footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+}
+
+#sub-footer-items {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#sub-footer-items-2 {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.sub-footer a {
+    color: #d83200;
+    text-decoration: none;
+}
+
+.sub-footer a:hover {
+    text-decoration: underline;
+    color: #a53501;
+}
+
+.footer-icon {
+    width: 20px; /* Adjust the size of the icons */
+    height: auto;
+    vertical-align: middle; /* Ensure the icon aligns properly with the text */
+    margin: 0 5px; /* Add some space between the icon and the text */
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 600px) {
+    footer {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+    footer .container {
+        flex-direction: column; /* Stack items vertically */
+        margin-left: 5%; /* Adjust margins */
+        margin-right: 5%; /* Adjust margins */
+    }
+    footer .map-container {
+        width: 100%; /* Full width */
+        height: 200px; /* Adjust height */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 200px;
+    }
+    footer .footer-text {
+        margin-right: 5%; /* Adjust margins */
+        margin-left: 5%; /* Adjust margins */
+    }
+    .fake-button {
+        margin-left: 0; /* Adjust margin */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+    .fake-button h1 {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    footer h2 {
+        font-size: 1.5rem; /* Adjust font size */
+    }
+    footer p {
+        font-size: 0.9rem; /* Adjust font size */
+        padding: 0 10px; /* Adjust padding */
+    }
+    .social-media {
+        padding: 15px 0; /* Adjust padding */
+    }
+    .social-media i {
+        font-size: 1.5rem; /* Adjust icon size */
+    }
+    footer .footer-menu {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Adjust gap */
+    }
+    footer .footer-menu div {
+        width: 100%; /* Full width */
+    }
+    footer .footer-menu h4 {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 0.8rem; /* Adjust font size */
+    }
+    .sub-footer {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+    #sub-footer-items {
+        font-size: 1rem; /* Adjust font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.7rem; /* Adjust font size */
+    }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 601px) and (max-width: 768px) {
+    footer {
+        padding: 40px 15px; /* Adjust padding for tablets */
+    }
+    footer .container {
+        flex-direction: column; /* Stack items vertically */
+        margin-left: 10%; /* Adjust margins */
+        margin-right: 10%; /* Adjust margins */
+    }
+    footer .map-container {
+        width: 100%; /* Full width */
+        height: 250px; /* Adjust height */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 200px;
+    }
+    footer .footer-text {
+        margin-right: 10%; /* Adjust margins */
+        margin-left: 10%; /* Adjust margins */
+    }
+    .fake-button {
+        margin-left: 0; /* Adjust margin */
+        margin-bottom: 20px; /* Adjust margin */
+    }
+    .fake-button h1 {
+        font-size: 1.3rem; /* Adjust font size */
+    }
+    footer h2 {
+        font-size: 1.75rem; /* Adjust font size */
+    }
+    footer p {
+        font-size: 0.95rem; /* Adjust font size */
+        padding: 0 15px; /* Adjust padding */
+    }
+    .social-media {
+        padding: 18px 0; /* Adjust padding */
+    }
+    .social-media i {
+        font-size: 1.75rem; /* Adjust icon size */
+    }
+    footer .footer-menu {
+        flex-direction: column; /* Stack items vertically */
+        gap: 25px; /* Adjust gap */
+    }
+    footer .footer-menu div {
+        width: 100%; /* Full width */
+    }
+    footer .footer-menu h4 {
+        font-size: 0.95rem; /* Adjust font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 0.85rem; /* Adjust font size */
+    }
+    .sub-footer {
+        font-size: 0.95rem; /* Adjust font size */
+    }
+    #sub-footer-items {
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.75rem; /* Adjust font size */
+    }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    footer {
+        padding: 50px 20px; /* Default padding */
+    }
+    footer .container {
+        display: flex; /* Ensure flexbox layout */
+        flex-direction: row; /* Default flex direction */
+        align-items: flex-start; /* Align items to the top */
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+    }
+    footer .map-container {
+        width: 100%; /* Default width */
+        height: 350px; /* Default height */
+        margin-right: 20px; /* Default margin */
+        margin-bottom: 100px;
+    }
+    footer .footer-text {
+        margin-right: 15%; /* Default margins */
+        margin-left: 15%; /* Default margins */
+    }
+    .fake-button {
+        margin-left: 100px; /* Default margin */
+        margin-bottom: 20px; /* Default margin */
+    }
+    .fake-button h1 {
+        font-size: 1.5rem; /* Default font size */
+    }
+    footer h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    footer p {
+        font-size: 1rem; /* Default font size */
+        padding: 0 20px; /* Default padding */
+    }
+    .social-media {
+        padding: 20px 0; /* Default padding */
+    }
+    .social-media i {
+        font-size: 2rem; /* Default icon size */
+    }
+    footer .footer-menu {
+        flex-direction: row; /* Default flex direction */
+        gap: 5%; /* Default gap */
+    }
+    footer .footer-menu div {
+        width: 200px; /* Default width */
+    }
+    footer .footer-menu h4 {
+        font-size: 1rem; /* Default font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 0.9rem; /* Default font size */
+    }
+    .sub-footer {
+        font-size: 1rem; /* Default font size */
+    }
+    #sub-footer-items {
+        font-size: 1.3rem; /* Default font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.8rem; /* Default font size */
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    footer {
+        padding: 50px 20px; /* Default padding */
+    }
+    footer .container {
+        display: flex; /* Ensure flexbox layout */
+        flex-direction: row; /* Default flex direction */
+        align-items: flex-start; /* Align items to the top */
+        margin-left: 15%; /* Default margins */
+        margin-right: 15%; /* Default margins */
+    }
+    footer .map-container {
+        width: 100%; /* Default width */
+        height: 350px; /* Default height */
+        margin-right: 20px; /* Default margin */
+        margin-bottom: 100px;
+    }
+    footer .footer-text {
+        margin-right: 15%; /* Default margins */
+        margin-left: 15%; /* Default margins */
+    }
+    .fake-button {
+        margin-left: 100px; /* Default margin */
+        margin-bottom: 20px; /* Default margin */
+    }
+    .fake-button h1 {
+        font-size: 1.5rem; /* Default font size */
+    }
+    footer h2 {
+        font-size: 2rem; /* Default font size */
+    }
+    footer p {
+        font-size: 1rem; /* Default font size */
+        padding: 0 20px; /* Default padding */
+    }
+    .social-media {
+        padding: 20px 0; /* Default padding */
+    }
+    .social-media i {
+        font-size: 2rem; /* Default icon size */
+    }
+    footer .footer-menu {
+        flex-direction: row; /* Default flex direction */
+        gap: 5%; /* Default gap */
+    }
+    footer .footer-menu div {
+        width: 200px; /* Default width */
+    }
+    footer .footer-menu h4 {
+        font-size: 1rem; /* Default font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 0.9rem; /* Default font size */
+    }
+    .sub-footer {
+        font-size: 1rem; /* Default font size */
+    }
+    #sub-footer-items {
+        font-size: 1.3rem; /* Default font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.8rem; /* Default font size */
+    }
+}
+
+/* Extra Large Devices (1201px to 1600px) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+    footer {
+        padding: 50px 20px; /* Default padding */
+    }
+    footer .container {
+        display: flex; /* Ensure flexbox layout */
+        flex-direction: row; /* Default flex direction */
+        align-items: flex-start; /* Align items to the top */
+        margin-left: 10%; /* Adjust margins */
+        margin-right: 10%; /* Adjust margins */
+    }
+    footer .map-container {
+        width: 33%; /* Slightly smaller width */
+        height: 350px; /* Default height */
+        margin-right: 20px; /* Default margin */
+    }
+    footer .footer-text {
+        margin-right: 10%; /* Adjust margins */
+        margin-left: 10%; /* Adjust margins */
+    }
+    .fake-button {
+        margin-left: 80px; /* Adjust margin */
+        margin-bottom: 20px; /* Default margin */
+    }
+    .fake-button h1 {
+        font-size: 1.4rem; /* Slightly smaller font size */
+    }
+    footer h2 {
+        font-size: 1.8rem; /* Slightly smaller font size */
+    }
+    footer p {
+        font-size: 0.95rem; /* Slightly smaller font size */
+        padding: 0 20px; /* Default padding */
+    }
+    .social-media {
+        padding: 20px 0; /* Default padding */
+    }
+    .social-media i {
+        font-size: 1.8rem; /* Slightly smaller icon size */
+    }
+    footer .footer-menu {
+        flex-direction: row; /* Default flex direction */
+        gap: 4%; /* Adjust gap */
+    }
+    footer .footer-menu div {
+        width: 180px; /* Slightly smaller width */
+    }
+    footer .footer-menu h4 {
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 0.85rem; /* Slightly smaller font size */
+    }
+    .sub-footer {
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+    #sub-footer-items {
+        font-size: 1.2rem; /* Slightly smaller font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.75rem; /* Slightly smaller font size */
+    }
+}
+
+/* Ultra Large Devices (Screens larger than 1600px) */
+@media (min-width: 1601px) {
+    footer {
+        padding: 60px 30px; /* Increase padding for ultra large screens */
+    }
+    footer .container {
+        display: flex; /* Ensure flexbox layout */
+        flex-direction: row; /* Default flex direction */
+        align-items: flex-start; /* Align items to the top */
+        justify-content: space-between; /* Ensure items are spaced out */
+        margin-left: 10%; /* Adjust margins */
+        margin-right: 10%; /* Adjust margins */
+    }
+    footer .map-container {
+        width: 48%; /* Increase width */
+        height: 400px; /* Increase height */
+        margin-right: 30px; /* Increase margin */
+    }
+    footer .footer-text {
+        margin-right: 20%; /* Increase margins */
+        margin-left: 20%; /* Increase margins */
+    }
+    .fake-button {
+        margin-left: 120px; /* Increase margin */
+        margin-bottom: 25px; /* Increase margin */
+    }
+    .fake-button h1 {
+        font-size: 1.6rem; /* Increase font size */
+    }
+    footer h2 {
+        font-size: 2.2rem; /* Increase font size */
+    }
+    footer p {
+        font-size: 1.1rem; /* Increase font size */
+        padding: 0 25px; /* Increase padding */
+    }
+    .social-media {
+        padding: 25px 0; /* Increase padding */
+    }
+    .social-media i {
+        font-size: 2.2rem; /* Increase icon size */
+    }
+    footer .footer-menu {
+        flex-direction: row; /* Default flex direction */
+        gap: 6%; /* Increase gap */
+    }
+    footer .footer-menu div {
+        width: 220px; /* Increase width */
+    }
+    footer .footer-menu h4 {
+        font-size: 1.1rem; /* Increase font size */
+    }
+    footer .footer-menu ul li a {
+        font-size: 1rem; /* Increase font size */
+    }
+    .sub-footer {
+        font-size: 1.1rem; /* Increase font size */
+    }
+    #sub-footer-items {
+        font-size: 1.4rem; /* Increase font size */
+    }
+    #sub-footer-items-2 {
+        font-size: 0.9rem; /* Increase font size */
+    }
+}
+
+/* Footer End */
+
+
+
+/* For Other Devices Start*/
+/* ********* Responsive Styles for Smaller Devices ********* */
+
+/* For Other Devices End*/

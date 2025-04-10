@@ -1,0 +1,12 @@
+
+    
+
+    other pages have an issue with justify item or flexbox related about the menu
+
+    <section id="services-section">
+    try addding table for contents
+
+    e-mail send type
+    services contact-us goes below
+    delete unnecessary  files etc
+    check all the titles have bg color as light red
